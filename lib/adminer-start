@@ -1,0 +1,3 @@
+#!/bin/bash
+php -v
+php -S 0.0.0.0:9000

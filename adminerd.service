@@ -3,8 +3,8 @@ Description=The Adminer Daemon
 
 [Service]
 User=root
-WorkingDirectory=/var/lib/adminer
-ExecStart=adminer-start
+WorkingDirectory=/usr/lib/adminer
+ExecStart=/usr/lib/adminer/adminer-start
 Restart=always
 
 [Install]
