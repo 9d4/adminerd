@@ -1,10 +1,10 @@
 [Unit]
-Description=Ampas is powerful
+Description=The Adminer Daemon
 
 [Service]
 User=root
 WorkingDirectory=/var/lib/adminer
-ExecStart=php -S 0.0.0.0:9000 adminer-4.8.1-en.php
+ExecStart=adminer-start
 Restart=always
 
 [Install]
