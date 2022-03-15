@@ -1,0 +1,11 @@
+[Unit]
+Description=Ampas is powerful
+
+[Service]
+User=root
+WorkingDirectory=/var/lib/adminer
+ExecStart=php -S 0.0.0.0:9000 adminer-4.8.1-en.php
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
