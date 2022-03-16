@@ -1,3 +1,9 @@
 #!/bin/bash
+source "./config.cfg"
+
+DEFAULT_ADMINER_PORT=9000
+HOST="0.0.0.0:${ADMINER_PORT:=DEFAULT_ADMINER_PORT}"
+FILE="adminer.php"
+
 php -v
-php -S 0.0.0.0:9000
+php -S "$HOST" "$FILE"
